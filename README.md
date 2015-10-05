@@ -15,9 +15,9 @@ This project tries to model the scientific community regarding the spreading of 
 
 ## The Model
 
-The publication data: We are planning to get publication data including the title, abstract, autors and institutions. The words appearing in the title and abstract are than ranked and so we want go gather catchwords corresponding to new theories. Based on this the spreading of these ideas starting from their first appearance can be followed.
+The publication data: We are planning to get publication data including the title, abstract, autors and institutions. The words appearing in the title and abstract are than ranked and so we want go gather catchwords corresponding to new theories. Based on this the aswell as autors and institution data the spreading of these ideas starting from their first appearance can be followed.
 
-Spreading Parameters: For us, the university ranking and Journal Impact Factors are the two most obvious indicators how good a idea can be and how fast an idea will spread. Based on this the spreading can be simulated from a starting point given by the publication data and than compared to the real spreading.
+Spreading Parameters: For us, the university ranking and Journal Impact Factors (not only overall, but also regional) are the two most obvious indicators how good a idea can be and how fast an idea will spread. Based on this and the spreading in space can be simulated from a starting point given by the publication data and than compared to the real spreading.
 
 (Define dependent and independent variables you want to study. Say how you want to measure them.) (Why is your model a good abtraction of the problem you want to study?) (Are you capturing all the relevant aspects of the problem?)
 
