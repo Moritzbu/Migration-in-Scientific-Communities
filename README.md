@@ -7,7 +7,7 @@
 
 ## General Introduction
 
-This project tries to model the scientific community regarding the spreading of ideas and research activity. Based on real publication data the spreading of ideas is compared to simulated data using university ranking and Journal Impact Factors as basis. Based on this first modell we than try to find other influences, aswell as to refine and describe the the properies in more detail.
+This project models the scientific community regarding the spreading of ideas and research activity. Based on real publication data the dissemination of ideas is compared to simulated data using university ranking and Journal Impact Factors as parameters. Based on this first modell the implementation of a well known modell is driven (which one??). From this we can uncover other influences, aswell as to refine and describe our modell in more detail.
 
 (States your motivation clearly: why is it important / interesting to solve this problem?)
 (Add real-world examples, if any)
