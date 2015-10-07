@@ -15,19 +15,16 @@ This project models the scientific community regarding the spreading of ideas an
 
 ## The Model
 
-An Agent Based Modell is made, using Journals, Institutions and Researchers as Agents. The Journals have the property of being the ones who make Information accessable. A well-known measure for this activity is the so called Impact Factor, which is produces by Thomson Reuters. Since there are also conferences aswell as private interaction one can deduce the total Impact of Journals with respect to ''Private'' Interaction. The Instututions serve as deliverers of grants and the used experimental ressources. Here one can
-The publication data: We are planning to get publication data including the title, abstract, autors and institutions. The words appearing in the title and abstract are than ranked to gather catchwords corresponding to new theories. Based on this together with the autor data the spreading of the ideas starting from their first appearance can be followed.
-
-Spreading Parameters: For us, the university ranking and Journal Impact Factors (not only overall, but also regional) are the two most obvious indicators how good an idea will spread. Based on this the spreading in space can be simulated from a starting point given by the publication data and than compared to the real spreading.
+An Agent Based Modell is made, using Journals, Institutions and Researchers as Agents. The Journals have the property of being the ones who make Information accessable. A well-known measure for this activity is the so called Impact Factor, which measures the average number of citations per publication. Since there are also conferences aswell as private interaction one can deduce the total Impact of Journals with respect to ''Private'' Interaction. The Instututions serve as deliverers of grants and the used experimental ressources. Here one can measure the wealth of an institution by its university ranking. The Researchers are the creators of ideas and therefore drive the whole process. It is asked how the relationship between Researchers and Papers/Instution have. This is made by comparison between the real publication data given by a offline storage of arvix data. For this we mine publication data including the title, abstract, autors and institutions for keywords. To achieve this, the words appearing in the title and abstract are ranked to gather the most published catchwords. These catchwords are assumed to be corresponding to new theories. Based from a first mentioning of such a catchword, the predicted spreading provided by the simulation is compared to the real spreading regarding the data from arxiv.
 
 (Define dependent and independent variables you want to study. Say how you want to measure them.) (Why is your model a good abtraction of the problem you want to study?) (Are you capturing all the relevant aspects of the problem?)
 
-
 ## Fundamental Questions
 
-Is the belonging to a Wold-Class university necessary to be able to produce a trough-breaking idea?
-Do university ranking and Journal Impact Factors sufficie to model the impact of a new idea?
-What other parameters influence the arising and the spreading of ideas?
+- It is known that the moment of publication significantly increases the number of citation, is this also true for low ranked instutions / small Journals? 
+- Is the belonging to a Wold-Class university necessary to be able to produce such a catchword?
+- Do university ranking and Journal Impact Factors sufficie to model the impact of a new idea?
+- What other parameters influence the arising and the spreading of ideas?
 
 (At the end of the project you want to find the answer to these questions)
 (Formulate a few, clear questions. Articulate them in sub-questions, from the more general to the more specific. )
@@ -53,9 +50,12 @@ The proposed Projects 27-30 would be good references.
 
 ## Research Methods
 
+Agent-Based Model
+
 (Cellular Automata, Agent-Based Model, Continuous Modeling...) (If you are not sure here: 1. Consult your colleagues, 2. ask the teachers, 3. remember that you can change it afterwards)
 
 
 ## Other
 
+arxiv data
 (mention datasets you are going to use)
