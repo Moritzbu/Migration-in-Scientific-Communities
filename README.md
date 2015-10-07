@@ -15,6 +15,7 @@ This project models the scientific community regarding the spreading of ideas an
 
 ## The Model
 
+An Agent Based Modell is made, using Journals, Institutions and Researchers as Agents. The Journals have the property of being the ones who make Information accessable. A well-known measure for this activity is the so called Impact Factor, which is produces by Thomson Reuters. Since there are also conferences aswell as private interaction one can deduce the total Impact of Journals with respect to ''Private'' Interaction. The Instututions serve as deliverers of grants and the used experimental ressources. Here one can
 The publication data: We are planning to get publication data including the title, abstract, autors and institutions. The words appearing in the title and abstract are than ranked to gather catchwords corresponding to new theories. Based on this together with the autor data the spreading of the ideas starting from their first appearance can be followed.
 
 Spreading Parameters: For us, the university ranking and Journal Impact Factors (not only overall, but also regional) are the two most obvious indicators how good an idea will spread. Based on this the spreading in space can be simulated from a starting point given by the publication data and than compared to the real spreading.
