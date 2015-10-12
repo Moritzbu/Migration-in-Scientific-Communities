@@ -49,13 +49,17 @@ old:
 
 
 https://www.sciencemag.org/content/344/6186/809.summary
+
 http://www.kellogg.northwestern.edu/faculty/uzzi/ftp/081121%20Multiuniversity%20teams%20Science%20WJ.and%20Uzzi.pdf
+
 https://journals.aps.org/prx/pdf/10.1103/PhysRevX.4.041036
+
 http://iopscience.iop.org/article/10.1209/0295-5075/86/68001/meta;jsessionid=58F9C88C479CA1B8732A0E3C7BA5E068.c1
+
 http://www.pnas.org/content/112/34/E4671.abstract
+
 https://github.com/maybmdz/NetworkBased-Modeling-for-the-Spread-of-Scientific-Ideas/blob/master/Report/Report.pdf
 
-The proposed Projects 27-30 would be good references.
 
 (Add the bibliographic references you intend to use)
 (Explain possible extension to the above models)
@@ -71,5 +75,6 @@ Agent-Based Model
 
 ## Other
 
-arxiv data
+APS dataset
+
 (mention datasets you are going to use)
