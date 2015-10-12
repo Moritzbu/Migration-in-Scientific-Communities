@@ -23,7 +23,7 @@ An Agent Based Modell is made, using Institutions and Researchers as Agents. The
 
 ![equation](http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7Bnumber%5C%20of%5C%20papers%7D%7Bnumber%5C%20of%5C%20researchers%7D%20%2A%20influence%5C%20coefficient%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 
-The influence is set to 1 for the average number of citations and than linearly adjusted (![equation2](http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7Bnumber%5C%20of%5C%20citation%7D%7Baverage%5C%20citations%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0))
+The influence is set to 1 for the average number of citations and than linearly adjusted (![equation2](http://bit.ly/1NBmrGS))
 As a second survey the number of active researchers (still publishing) is compared to the number of researchers in total. Than the Institutions generating the most cited papers and the migration of Researchers with respect to their papers are analysed. It is asked how the relationship between institutions and researchers respectively the impact on their research is. This is made by comparing real publication data given by a offline storage of XX and our simulation. 
 
 ..For this we mine publication data including the title, autors and institutions. The words appearing in the title are ranked to gather the most published catchwords. These catchwords are assumed to be corresponding to new theories. Based from a first mentioning of such a catchword, the predicted spreading provided by the simulation is compared to the real spreading regarding the data from XXX.
