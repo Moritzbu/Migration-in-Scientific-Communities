@@ -19,16 +19,7 @@ This project models the scientific community regarding the spreading of ideas an
 ??: Is there a difference on what universities do??
 ??:   Agents..
 
-An Agent Based Modell is made, using Institutions and Researchers as Agents. The Instututions serve as deliverers of grants and the used experimental ressources. The Researchers are the creators of ideas and therefore drive the whole process. To get a starting modell, an APM dataset in analysed. This means, that the amount of publications per university with respect to the papers influence and number of individual researchers is gathered to achieve the given publication distribution.
-
-![equation](http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7Bnumber%5C%20of%5C%20papers%7D%7Bnumber%5C%20of%5C%20researchers%7D%20%2A%20influence%5C%20coefficient%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
-
-The influence is set to 1 for the average number of citations and than linearly adjusted (![equation2](http://bit.ly/1NBmrGS))
-As a second survey the number of active researchers (still publishing) is compared to the number of researchers in total. Than the Institutions generating the most cited papers and the migration of Researchers with respect to their papers are analysed. It is asked how the relationship between institutions and researchers respectively the impact on their research is. This is made by comparing real publication data given by a offline storage of XX and our simulation. 
-
-..For this we mine publication data including the title, autors and institutions. The words appearing in the title are ranked to gather the most published catchwords. These catchwords are assumed to be corresponding to new theories. Based from a first mentioning of such a catchword, the predicted spreading provided by the simulation is compared to the real spreading regarding the data from XXX.
-
-For the dataset the classification is based on the University rankings (i.e. higher ranking -> more ressources -> more attractive -> better research).  ...
+An Agent Based Modell is made, using Institutions and Researchers as Agents. The Instututions serve as deliverers of grants and the used experimental ressources. The Researchers are the creators of ideas and therefore drive the whole process. To get a starting modell, an APM dataset in analysed. This means, that the amount of publications per university with respect to the papers influence and number of individual researchers is gathered to achieve the given publication distribution. (number of publications * influence / number of researcher). Where the influence is set to 1 for the average number of citations and than linearly adjusted (influence = number of citations / average number of citations). As a second survey the number of active researchers is compared to the number of researchers in total (drop rate = number of actives / total number). Here one has to add only the ones to the total number who don't publish under another university. With these two sets on hand, the migration of Researchers with respect to their papers are analysed. With respect to these 3 parameters (number of publications, number of researchers and influence) our system is modelled to achieve a more efficient science community.
 
 (Define dependent and independent variables you want to study. Say how you want to measure them.) (Why is your model a good abtraction of the problem you want to study?) (Are you capturing all the relevant aspects of the problem?)
 
@@ -56,7 +47,13 @@ old:
 
 ## References 
 
-???
+
+https://www.sciencemag.org/content/344/6186/809.summary
+http://www.kellogg.northwestern.edu/faculty/uzzi/ftp/081121%20Multiuniversity%20teams%20Science%20WJ.and%20Uzzi.pdf
+https://journals.aps.org/prx/pdf/10.1103/PhysRevX.4.041036
+http://iopscience.iop.org/article/10.1209/0295-5075/86/68001/meta;jsessionid=58F9C88C479CA1B8732A0E3C7BA5E068.c1
+http://www.pnas.org/content/112/34/E4671.abstract
+https://github.com/maybmdz/NetworkBased-Modeling-for-the-Spread-of-Scientific-Ideas/blob/master/Report/Report.pdf
 
 The proposed Projects 27-30 would be good references.
 
