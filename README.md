@@ -22,7 +22,7 @@ This project models the scientific community regarding the spreading of ideas an
 An Agent Based Modell is made, using Institutions and Researchers as Agents. The Instututions serve as deliverers of grants and the used experimental ressources. The Researchers are the creators of ideas and therefore drive the whole process. To get a starting modell, an APM dataset in analysed. This means, that the amount of publications per university with respect to the papers influence and number of individual researchers is gathered to achieve the given publication distribution.
 
   number of papers
----------------------*influence coefficient  
+---------------------*influence coefficient 
 number of researchers  
 
 The influence is set to 1 for the average number of citations and than linearly adjusted ($number of citation / average citations$)
