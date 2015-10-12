@@ -7,7 +7,7 @@
 
 ## General Introduction
 
-This project models the scientific community regarding the migration of researchers between universities regarding their skills and the ressources of the universities. The simulation is made using an Agent Based Model. This results are than compared to data gained from a APM dataset covering a big timespan. If time permitts one could fit the modell to the data regaring changement of the parameters in time.
+This project models the scientific community regarding the migration of researchers between universities regarding their skills and the ressources of the universities. The simulation is made using an Agent Based Model. This results are than compared to data gained from a APM dataset covering a big timespan. This question enojoys a bigger than ever relevance since the mobility of people has increased enormous not only transportation, but also communication wise. It was never easier to get information about universities and researchers affiliated to them. So finding out if the behaveaur is suiting in our modell and that we can explain the migration in simple terms would give the possibility to support the science community and at the last end universities in their straification.
 
 ## The Model
 
@@ -17,7 +17,7 @@ As a comparison an APM dataset in analysed. First of all, the amount of publicat
 
 ## Fundamental Questions
 
-- How do the university rankings represent capacity in therms the research and do they perhaps lead to e uneven distribution of good researchers?
+- How do the university rankings represent capacity in therms the research and do they lead to e uneven distribution of good researchers?
 - Is the distribution of quality researchers optimal respectively is the behaveour of the good researchers optimal? (i.e. loss of capazities because they don't want to take positions at small universities)
 - Is the personel distribution optimal or could a increased attractivity of small universities lead to a faster growth of knowledge?
 
