@@ -7,7 +7,7 @@
 
 ## General Introduction
 
-This project models the scientific community regarding the spreading of ideas and research activity. Based on real publication data the dissemination of ideas is compared to simulated data using university ranking and Journal Impact Factors as parameters. Based on this first modell the implementation of a well known modell is driven (which one??). From this we can uncover other influences, aswell as to refine and describe our modell in more detail.
+This project models the scientific community regarding the spreading of ideas and research activity. Based on real publication data the dissemination of ideas is compared to simulated data using university ranking and Journal Impact Factors as parameters. Based on this the implementation of a Agent Based Modell gives rise on several impact factors. 
 
 (States your motivation clearly: why is it important / interesting to solve this problem?)
 (Add real-world examples, if any)
@@ -15,12 +15,16 @@ This project models the scientific community regarding the spreading of ideas an
 
 ## The Model
 
-An Agent Based Modell is made, using Journals, Institutions and Researchers as Agents. The Journals have the property of being the ones who make Information accessable. A well-known measure for this activity is the so called Impact Factor, which measures the average number of citations per publication. Since there are also conferences aswell as private interaction one can deduce the total Impact of Journals with respect to ''Private'' Interaction. The Instututions serve as deliverers of grants and the used experimental ressources. Here one can measure the wealth of an institution by its university ranking. The Researchers are the creators of ideas and therefore drive the whole process. It is asked how the relationship between Researchers and Papers/Instution is. This is made by comparing real publication data given by a offline storage of arxiv and our simulation. For this we mine publication data including the title, abstract, autors and institutions for keywords. To achieve this, the words appearing in the title and abstract are ranked to gather the most published catchwords. These catchwords are assumed to be corresponding to new theories. Based from a first mentioning of such a catchword, the predicted spreading provided by the simulation is compared to the real spreading regarding the data from arxiv.
+An Agent Based Modell is made, using Institutions and Researchers as Agents. The Journals are modelled by their Impact Factor which is a fixed value. Since there are also conferences aswell as private interaction one can deduce the total Impact of Journals with respect to ''Private'' Interaction. The Instututions serve as deliverers of grants and the used experimental ressources. Here one can measure the wealth of an institution by its university ranking. The Researchers are the creators of ideas and therefore drive the whole process. It is asked how the relationship between Researchers and Papers/Instution is. This is made by comparing real publication data given by a offline storage of arxiv and our simulation. For this we mine publication data including the title, autors and institutions for keywords. To achieve this, the words appearing in the title are ranked to gather the most published catchwords. These catchwords are assumed to be corresponding to new theories. Based from a first mentioning of such a catchword, the predicted spreading provided by the simulation is compared to the real spreading regarding the data from arxiv.
 
 (Define dependent and independent variables you want to study. Say how you want to measure them.) (Why is your model a good abtraction of the problem you want to study?) (Are you capturing all the relevant aspects of the problem?)
 
 ## Fundamental Questions
 
+- Is the distribution of quality researchers and behaveour of the good researchers optimal or could one optimize it (i.e. loss of capazities because they don't want to take positions at small universities)
+- Is the impact distribution optimal or could a bigger impact of publications from small universities lead to a faster growth of knowledge
+ 
+old:
 - It is known that the moment of publication significantly increases the number of citation, is this also true for low ranked instutions / small Journals? 
 - Is the belonging to a Wold-Class university necessary to be able to produce such a catchword?
 - Do university ranking and Journal Impact Factors sufficie to model the impact of a new idea?
