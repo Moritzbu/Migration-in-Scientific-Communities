@@ -7,7 +7,7 @@
 
 ## General Introduction
 
-This project models the scientific community regarding the spreading of ideas and research activity. Based on real publication data the dissemination of ideas is compared to simulated data using university ranking and Journal Impact Factors as parameters. Based on this the implementation of a Agent Based Modell gives rise on several impact factors. 
+This project models the scientific community regarding the spreading of ideas and research activity. Based on real publication data the dissemination of ideas is compared to simulated data using the university rankingas parameter. Based on this the implementation of a Agent Based Modell gives rise on several impact factors, that drive innovation processes aswell as acceptance by the community.
 
 (States your motivation clearly: why is it important / interesting to solve this problem?)
 (Add real-world examples, if any)
@@ -17,8 +17,18 @@ This project models the scientific community regarding the spreading of ideas an
 
 ??: amount of good researchers -> would be able to simulate the amount of awesome publications
 ??: Is there a difference on what universities do??
+??:   Agents..
 
-An Agent Based Modell is made, using Institutions and Researchers as Agents. The Journals are modelled by their Impact Factor which is a fixed value. The Instututions serve as deliverers of grants and the used experimental ressources. Their attractivity for researchers and therefore the amount of good researchers is here modelled to achieve the wished publication distribution. For the dataset the classification is based on the University rankings (i.e. higher ranking -> more ressources -> more attractive -> better research). The Researchers are the creators of ideas and therefore drive the whole process. It is asked how the relationship between Researchers and Instution is. This is made by comparing real publication data given by a offline storage of XX and our simulation. For this we mine publication data including the title, autors and institutions. The words appearing in the title are ranked to gather the most published catchwords. These catchwords are assumed to be corresponding to new theories. Based from a first mentioning of such a catchword, the predicted spreading provided by the simulation is compared to the real spreading regarding the data from XXX.
+An Agent Based Modell is made, using Institutions and Researchers as Agents. The Instututions serve as deliverers of grants and the used experimental ressources. The Researchers are the creators of ideas and therefore drive the whole process. To get a starting modell, an APM dataset in analysed. This means, that the amount of publications per university with respect to the papers influence and number of individual researchers is gathered to achieve the given publication distribution.
+
+$ number of papers / (number of researchers * influence coefficient) $
+
+The influence is set to 1 for the average number of citations and than linearly adjusted ($number of citation / average citations$)
+As a second survey the number of active researchers (still publishing) is compared to the number of researchers in total. Than the Institutions generating the most cited papers and the migration of Researchers with respect to their papers are analysed. It is asked how the relationship between institutions and researchers respectively the impact on their research is. This is made by comparing real publication data given by a offline storage of XX and our simulation. 
+
+..For this we mine publication data including the title, autors and institutions. The words appearing in the title are ranked to gather the most published catchwords. These catchwords are assumed to be corresponding to new theories. Based from a first mentioning of such a catchword, the predicted spreading provided by the simulation is compared to the real spreading regarding the data from XXX.
+
+For the dataset the classification is based on the University rankings (i.e. higher ranking -> more ressources -> more attractive -> better research).  ...
 
 (Define dependent and independent variables you want to study. Say how you want to measure them.) (Why is your model a good abtraction of the problem you want to study?) (Are you capturing all the relevant aspects of the problem?)
 
