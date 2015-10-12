@@ -7,7 +7,7 @@
 
 ## General Introduction
 
-This project models the scientific community regarding the migration of researchers between universities regarding their skills and the ressources of the universities. The simulation is made using an Agent Based Model. This results are than compared to data gained from a APM dataset covering a big timespan. This question enojoys a bigger than ever relevance since the mobility of people has increased enormous not only transportation, but also communication wise. It was never easier to get information about universities and researchers affiliated to them. So finding out if the behaveaur is suiting in our modell and that we can explain the migration in simple terms would give the possibility to support the science community and at the last end universities in their straification.
+This project models the migration in the scientific community. This is done by means of researchers moving between universities regarding their skills and the ressources of the universities. The simulation is made using an Agent Based Model. This results are than compared to data gained from a APM dataset covering a big timespan. This question enojoys a bigger than ever relevance since the mobility of people has increased enormous not only transportation, but also communication wise. It was never easier to get information about universities and researchers affiliated to them. So finding out if the behaveaur is suiting in our modell and that we can explain the migration in simple terms would give the possibility to support the science community and at the last end universities in their straification.
 
 ## The Model
 
