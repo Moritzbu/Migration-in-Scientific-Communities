@@ -7,7 +7,7 @@
 
 ## General Introduction
 
-This project models the scientific community regarding the spreading of ideas and research activity. Based on real publication data the dissemination of ideas is compared to simulated data using the university ranking as parameter. Based on this the implementation of a Agent Based Modell gives rise on several impact factors, that drive innovation processes aswell as acceptance by the community.
+This project models the scientific community regarding the spreading of ideas and research activity. Based on real publication data the dissemination of ideas is compared to simulated data using an Agent Based Model. The comparison should give rise to factors that drive innovation processes aswell as acceptance by the community.
 
 (States your motivation clearly: why is it important / interesting to solve this problem?)
 (Add real-world examples, if any)
