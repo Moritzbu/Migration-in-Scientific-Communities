@@ -7,7 +7,7 @@
 
 ## General Introduction
 
-This project models the migration in the scientific community. This is done by means of researchers moving between universities regarding their skills and the resources of the universities. The simulation is made using an Agent Based Model using scientists and universities as agents. The results are than compared to data gained from an APM dataset. This question enojoys a bigger than ever relevance since the mobility of people has increased enormous not only transportation-, but also communication-wise. It was never easier to get information about universities and researchers affiliated to them. So finding out if the values from an APM dataset is suiting our modell and explaining the migration in simple terms would give the possibility to support the science community and universities in their strategy.
+This project models the migration in the scientific community. This is done by means of researchers moving between universities regarding their skills and the resources of the universities. The simulation is made using an Agent Based Model using scientists and universities as agents. The results are than compared to data gained from an APM dataset. This subject enojoys a bigger than ever relevance since the mobility of people has increased enormous not only transportation-, but also information-wise. It was never easier to get knowledge about universities and researchers affiliated to them. Finding out, if the values from an APM dataset is suiting our modell and explaining the migration in simple terms would give the possibility to support the science community and universities in their strategy.
 
 ## The Model
 
@@ -17,8 +17,8 @@ In our dataset a huge range of time is covered. To make the data accessible by o
 
 ## Fundamental Questions
 
-- How do the university rankings represent capacity in therms the research and do their top-university attractivity lead to e uneven distribution of good researchers?
-- Is the distribution of quality researchers optimal respectively is the behaveour of the good researchers optimal? (i.e. loss of capazities because they don't want to take positions at small universities)
+- How do the university rankings represent capacity in therms the research and do their top-university attractivity lead to an uneven distribution of good researchers?
+- Is the distribution of quality researchers optimal respectively is the behaviour of the good researchers optimal? (i.e. loss of capazities because they don't want to take positions at small universities)
 - Is the personel distribution optimal or could a increased attractivity of small universities lead to a better distribution?
 
 ## Expected Results
