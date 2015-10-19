@@ -3,7 +3,7 @@
 
 > * Group Name: MetaScience
 > * Group participants names: Businger Moritz; Müller Hanna; Mutny Mojmir; Weber Pascal
-> * Project Title: Spreading of Scientific Ideas
+> * Project Title: Migration in Scientific Communities
 
 ## General Introduction
 
