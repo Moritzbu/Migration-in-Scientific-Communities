@@ -1,6 +1,6 @@
 college:
 -Space
--Attractiveness
+-Quality
 action:
 -hire and discard researchers
 -increase researchers qualities
@@ -9,4 +9,4 @@ action:
 Researchers:
 -Quality
 action:
-
+-check college quality
