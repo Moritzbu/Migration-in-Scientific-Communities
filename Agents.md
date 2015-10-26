@@ -1,7 +1,6 @@
 college:
 - Money (random)
 - Reputation (random)
-- Quality
 - Ranking (Reputation, Skill of reaserchers)
 - Space (Money)
 - policy (Ranking)
@@ -13,4 +12,5 @@ action:
 Researchers:
 - Skill (intrinsic(random, (Time)), Money(intrinsic))
 - Careerchoice (Ranking)
-- (borne and die)
+- (born and die)
+- (Changing)
