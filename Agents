@@ -1,0 +1,12 @@
+college:
+-Space
+-Quality
+action:
+-hire and discard researchers
+-increase researchers qualities
+-check qualities of applying researchers 
+
+Researchers:
+-Quality
+action:
+-check college quality
