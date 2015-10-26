@@ -1,4 +1,4 @@
-# MATLAB Fall 2015 – Research Plan
+# BLALBA MATLAB Fall 2015 – Research Plan
 
 
 > * Group Name: MetaScience
