@@ -1,12 +1,15 @@
 college:
--Space
+-Money (random)
+-Reputation (random)
 -Quality
+-Ranking (Reputation, Productivity of reaserchers)
+-Space (Money)
+-policy (Ranking)
 action:
--hire and discard researchers
--increase researchers qualities
--check qualities of applying researchers 
+- Hire and discard researchers (Ranking)
+- Increase researchers qualities (Money)
+- Check Skill of applying researchers (Policy)
 
 Researchers:
--Quality
-action:
--check college quality
+- Skill (random, Money, (Time))
+- Careerchoice (Ranking)
