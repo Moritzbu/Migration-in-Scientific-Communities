@@ -1,36 +1,76 @@
-//Initialize
-n = ?? //number of universitys
-r = ?? //number of researchers? constant?
-unimoney =      [um0,um1,...,um[n-1]] //randomly distribute money to n universitys
-unisize =       [us0,us1,...,us[n-1]] //number of reasearchers is proportional to unimoney
-unireputation = [ure0,ure1,..., ure[n-1]] //randomly distribute reputation to n universitys (perhaps dependant on money or vice versa?)
-unirank =       [ur0,ur1,..., ur[n-1]] // computed later (unireputation + (some factor)*sum(resskill[unires[n]]))
-resskill =      [rs0,rs1,...,rs[r-1]] //rondomly choosen skill for r researchers (perhaps sorted? Should not change much and allows some ideas...)
-// eventually: resprod = [rp0,rp1,...,rp[r-1]] //randomly choosen productivity for r researchers
-resuni =        [ru0,ru1,..., ru[r-1]] //randomly distribute the r reasearchers to the n universitys
-//or better unires? The other way round, which university has which researchers? Or both? I'll use both, at least at the moment.
-resuniprob =    [rup00,rup01,...,rup[0n-1];rup10,rup11,...,rup[1n-1];...;rup[r0],rup[r-11],...,rup[r-1n-1]] //randomly (/depending on unirank/ more to come) distribute probability of reasearchers to go to an university
+//Define and initialize variables
 
+//Initialize independant variables:
+n = N //number of universities
+unireputation = [ure[1],..., ure[n]] //randomly distribute reputation to n universities
+r = R //number of researchers
+resskill = [rs[1],...,rs[r]]  //random inital value and upper bound for skill of researchers
+
+//Dependent variables university
+unirank = [ur[1],..., ur[n]] // university ranking (unireputation + const*sum(resskill[unires[n]])
+unimoney = [um[1],...,um[n]] // university fund (various possibilities: i.e. propto unirank,random,equal..)
+unisize = [us[1],...,us[n]] //number of workingplaces (propto unimoney and normed to total number of researchers)
+
+//Dependant variables researchers
+resunipos = [rup[1],...,rup[r]] //location of researcher initatialized in a random manner
+resuniskill = [rus[1],...,rus[r]] // university dependant skill factor for each researcher (propto unimoney)
+resuniwill =    [ruw[1,1],...,ruw[1,n];...;ruw[r,1],...,ruw[r,n]] 
+//will of researchers to go to another university (i.e. random, propto unirank, propto unimoney...)
+
+//Variables system
+totskill = sum(resskill) //This value should be optimized
 
 //Simulate
 for(1:iterations)
 {
-    for(0:n-1)
-    {
-      compute ranking for n
+//current values:
+//calculate dependent variables researcher:
+    for(1:r)
+    {   
+//calculate university dependant skill:
+        resuniskill[i] = const*unimoney;
+        if(resskill[i]+resuniskill[i]<upper bound)
+        {
+            resuniskill[i]=resskill[i]+resuniskill[i]
+        }
+        else
+        {
+            resuniskill=upper bound
+        }
+//calculate migration will for each university:
+        for(j=[i,n])
+        {
+            resuniwill[i,j] = ... 
+        }
     }
-    for(0:r-1)
+//calculate dependant variables universities:
+    for(i=1:n)
     {
-      compute if willing/having to leave (difference averageskills and own skills, a bit random?) how to store?
-      store difference in unisize in diffunisize = [dus1,...,dus[n]]
+//calculate university rank:
+        unirank[i]=unireputation+sum(resskill)
+//calculate university money:
+        unimoney[i]= ...
+//calculate number of positions at university:
+        unisize[i]=int(unimoney[i]/n)
     }
-    for(i=0:i<n) (better random order)
+// migration step:
+// 1. Calculate the ranking of the researchers:
+    resrank[i] =  ranking(resskill[i])
+// 2. Set variable for number of researchers per universities
+    uniemploy = [ue[1],...,ue[n]]=[0,...,0] // number of researcher employed
+// 3. The best researchers choose first
+    if(resrank[i]=min(resrank))
     {
-      while(!(all asked) && dus[i] != 0)
-      {
-        if(best available not asked researcher (banar) (compute with resuniprob) wants to come) { resuni[banar] = i, remove from willing to le$
-      }
-      //what to do if some are unemployed? randomly choose an university with space left?
+        for(resrank[i]))
+        {
+            if(max(resuniprob[i,j]) && uniemp[j]<=us[j])
+                {
+                    //researchers go to university with space left
+                    resunipos[i]=j
+                    uniemp[j]++
+                }
+        }
     }
-    plot, save the simulated data??
+//calculate and plot the total skill:
+    totskill = sum(resskill)
 }
