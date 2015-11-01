@@ -1,15 +1,15 @@
 //Initialize
 n = ?? //number of universitys
 r = ?? //number of researchers? constant?
-unisize =       [us0,us1,...,us[n-1]] //randomly distribute number of reasearchers to n universitys
 unimoney =      [um0,um1,...,um[n-1]] //randomly distribute money to n universitys
-unireputation = [ure0,ure1,..., ure[n-1]] //randomly? (money?) distribute reputation to n universitys (perhaps sorted?)
+unisize =       [us0,us1,...,us[n-1]] //number of reasearchers is proportional to unimoney
+unireputation = [ure0,ure1,..., ure[n-1]] //randomly distribute reputation to n universitys (perhaps dependant on money or vice versa?)
 unirank =       [ur0,ur1,..., ur[n-1]] // computed later (unireputation + (some factor)*sum(resskill[unires[n]]))
 resskill =      [rs0,rs1,...,rs[r-1]] //rondomly choosen skill for r researchers (perhaps sorted? Should not change much and allows some ideas...)
 // eventually: resprod = [rp0,rp1,...,rp[r-1]] //randomly choosen productivity for r researchers
-resuni =        [ru0,ru1,..., ru[r-1]] //randomly? distribute the r reasearchers to the n universitys
+resuni =        [ru0,ru1,..., ru[r-1]] //randomly distribute the r reasearchers to the n universitys
 //or better unires? The other way round, which university has which researchers? Or both? I'll use both, at least at the moment.
-resuniprob =    [rup00,rup01,...,rup[0n-1];rup10,rup11,...,rup[1n-1];...;rup[r0],rup[r-11],...,rup[r-1n-1]] //randomly (or not only, unirank?) distribute probability of reasearchers to go to an university
+resuniprob =    [rup00,rup01,...,rup[0n-1];rup10,rup11,...,rup[1n-1];...;rup[r0],rup[r-11],...,rup[r-1n-1]] //randomly (/depending on unirank/ more to come) distribute probability of reasearchers to go to an university
 
 
 //Simulate
@@ -28,10 +28,9 @@ for(1:iterations)
     {
       while(!(all asked) && dus[i] != 0)
       {
-        if(best avaiable not asked researcher (banar) (compute with resuniprob) wants to come) { resuni[banar] = i, remove from willing to le$
+        if(best available not asked researcher (banar) (compute with resuniprob) wants to come) { resuni[banar] = i, remove from willing to le$
       }
       //what to do if some are unemployed? randomly choose an university with space left?
     }
-
     plot, save the simulated data??
 }
