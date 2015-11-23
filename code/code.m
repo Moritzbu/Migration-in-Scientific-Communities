@@ -1,4 +1,3 @@
-
 %Define and initialize variables
 
 % ---------------  Initialize independant variables -------------
@@ -28,6 +27,7 @@ uni_rank = zeros (n,1); %  // university ranking (unireputation + const*sum(ress
 % 3 options:  propto unirank,random,equal..)
 uni_size = zeros(n,1);
 max_uni_size = zeros(n,1);
+
 for i=1:n
     uni_size(i) = sum( res_unipos == i);
     max_uni_size(i) = sum( res_unipos == i);
@@ -36,23 +36,23 @@ end
 max_money = 100;
 combination = 0.05;
 
-uni_money =  max_money * (combination*rand(n,1) + (1-combination) *uni_size/r); 
+uni_money =  max_money * rand(n,1); % Fix budget for an uni
 total_money = sum (uni_money);
 
 % -----------------------------------------------------------------
 % - More parameters
 money_dependence = 0.1; 
-save randomvar
-%%
-% ----------------------  Simulation ------------------------------
-for moritz=1:3
-load randomvar
-for iter = 1:total    
 
+%
+% ----------------------  Simulation ------------------------------
+%
+for iter = 1:total    
+    
+    disp(max_uni_size)
     % Iteration over researchers and update their skills
     for k = 1:r   
         %calculate university dependant skill:
-        res_uniskill(k) = res_skill(k)*uni_money(res_unipos(k));
+        res_uniskill(k) = res_skill(k).*uni_money(res_unipos(k));
         total_resuniskill(k)=res_uniskill(k) + res_skill(k);
     end
     totskill = sum(total_resuniskill); % This value should be optimized
@@ -111,19 +111,16 @@ for iter = 1:total
 
 
     %disp(res_unipos);
-    results = [results; iter,totskill]; 
+    results = [results; iter,total_skill]; 
     for m=1:n
        results_uni{m}=[results_uni{m}; iter, uni_rank(m)];
     end
-     
     
 end
-figure(moritz);
+figure(1);
 plot (results(:,1),results(:,2),'g');
-figure(moritz+3)
-hold off
+figure(2)
 for m=1:n
     plot(results_uni{m}(:,1),results_uni{m}(:,2),'b');
     hold on
-end
 end
